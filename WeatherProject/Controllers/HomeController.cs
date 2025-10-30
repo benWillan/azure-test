@@ -15,12 +15,12 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var fruits = new List<string>
+        var weather = new List<string>
         {
-            "1", "2", "3"
+            "Windy", "Sunny", "Thunder Storms"
         };
         
-        return View(fruits);
+        return View(weather);
     }
 
     public IActionResult Privacy()
