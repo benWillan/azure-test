@@ -28,3 +28,4 @@ C:\Users\Ben\RiderProjects\AzureTest\WeatherProject\obj\Debug\net8.0\refint\Weat
 C:\Users\Ben\RiderProjects\AzureTest\WeatherProject\obj\Debug\net8.0\WeatherProject.pdb
 C:\Users\Ben\RiderProjects\AzureTest\WeatherProject\obj\Debug\net8.0\WeatherProject.genruntimeconfig.cache
 C:\Users\Ben\RiderProjects\AzureTest\WeatherProject\obj\Debug\net8.0\ref\WeatherProject.dll
+C:\Users\Ben\RiderProjects\AzureTest\WeatherProject\obj\Debug\net8.0\WeatherProject.sourcelink.json

@@ -17,10 +17,7 @@ public class HomeController : Controller
     {
         var fruits = new List<string>
         {
-            "cherry",
-            "strawberry",
-            "banana",
-            "avocado"
+            "1", "2", "3"
         };
         
         return View(fruits);
