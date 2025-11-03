@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Logging.AzureAppServices;
+
 namespace WeatherProject;
 
 public class Program
@@ -9,6 +11,7 @@ public class Program
 
         builder.Logging.ClearProviders();
         builder.Logging.AddConsole();
+        builder.Logging.AddAzureWebAppDiagnostics();
         builder.Logging.SetMinimumLevel(LogLevel.Information);
 
         Console.WriteLine("This is a test log");
