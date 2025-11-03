@@ -4,13 +4,19 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        /* BUILDER */
         var builder = WebApplication.CreateBuilder(args);
+
+        builder.Logging.ClearProviders();
+        builder.Logging.AddConsole();
+        builder.Logging.SetMinimumLevel(LogLevel.Information);
 
         Console.WriteLine("This is a test log");
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
 
+        /* APP */
         var app = builder.Build();
         
         var logger = app.Services.GetRequiredService<ILogger<Program>>();
