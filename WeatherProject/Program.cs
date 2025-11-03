@@ -12,6 +12,13 @@ public class Program
         builder.Services.AddControllersWithViews();
 
         var app = builder.Build();
+        
+        var logger = app.Services.GetRequiredService<ILogger<Program>>();
+
+        // Log environment
+        logger.LogInformation("Test logging info");
+
+        // Log connection string (first 20 chars for safety)
 
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
