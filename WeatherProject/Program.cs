@@ -6,6 +6,8 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        Console.WriteLine("This is a test log");
+
         // Add services to the container.
         builder.Services.AddControllersWithViews();
 
